@@ -8,9 +8,12 @@
 </head>
 <body>
     <div class="background">
+        <!-- Engineer Character -->
         <div class="engineer">
             <div class="universe-hologram"></div>
         </div>
+
+        <!-- Side Menu with Game Sections -->
         <nav class="menu">
             <img src="production-icon.png" alt="Production" id="production" class="menu-icon">
             <img src="upgrades-icon.png" alt="Upgrades" id="upgrades" class="menu-icon">
@@ -18,14 +21,45 @@
             <img src="universe-icon.png" alt="Universe Control" id="universe" class="menu-icon">
             <img src="multiverse-icon.png" alt="Multiverse" id="multiverse" class="menu-icon">
         </nav>
+
+        <!-- Main Content Area -->
         <main id="content">
-            <div id="production-panel" class="panel">Production Panel Content</div>
-            <div id="upgrades-panel" class="panel">Upgrades Panel Content</div>
-            <div id="empire-panel" class="panel">Empire Conquest Content</div>
-            <div id="universe-panel" class="panel">Universe Control Content</div>
-            <div id="multiverse-panel" class="panel">Multiverse Content</div>
+            <!-- Production Panel -->
+            <div id="production-panel" class="panel">
+                <h2>Production</h2>
+                <p id="robot-count">Robots: 0</p>
+                <button id="production-button">Produce Robots</button>
+            </div>
+
+            <!-- Upgrades Panel -->
+            <div id="upgrades-panel" class="panel">
+                <h2>Upgrades</h2>
+                <button id="speed-upgrade-button">Increase Speed</button>
+                <button id="self-repair-button">Self-Repair Mechanism</button>
+                <button id="conquest-upgrade-button">Boost Conquest Power</button>
+            </div>
+
+            <!-- Empire Conquest Panel -->
+            <div id="empire-panel" class="panel">
+                <h2>Empire Conquest</h2>
+                <p id="empire-count">Empires Conquered: 0</p>
+                <button id="conquer-empire-button">Conquer Empire</button>
+            </div>
+
+            <!-- Universe Control Panel -->
+            <div id="universe-panel" class="panel">
+                <h2>Universe Control</h2>
+                <p id="universe-control">Universe Control: 0</p>
+            </div>
+
+            <!-- Multiverse Panel -->
+            <div id="multiverse-panel" class="panel">
+                <h2>Multiverse</h2>
+                <p id="multiverse-explored">Multiverse Explored: 0</p>
+            </div>
         </main>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
